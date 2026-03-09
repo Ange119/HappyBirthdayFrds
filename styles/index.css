@@ -1,0 +1,97 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f5e9f7 0%, #e8f0fe 50%, #e6f4ea 100%);
+      color: #2d1b47;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      text-align: center;
+      color: #4a2c6b;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.3rem;
+      color: #5c4b6e;
+      margin-bottom: 50px;
+      font-weight: 300;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 70px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 12px 32px rgba(74, 44, 107, 0.12);
+      transition: all 0.4s ease;
+      border: 1px solid rgba(255,255,255,0.7);
+    }
+
+    .gallery img:hover {
+      transform: translateY(-12px) scale(1.03);
+      box-shadow: 0 24px 48px rgba(74, 44, 107, 0.22);
+    }
+
+    .message {
+      max-width: 780px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(12px);
+      padding: 50px 40px;
+      border-radius: 24px;
+      box-shadow: 0 16px 60px rgba(74, 44, 107, 0.15);
+      text-align: center;
+      font-size: 1.28rem;
+      color: #3a2a4f;
+      line-height: 1.9;
+    }
+
+    .message p {
+      margin-bottom: 1.8em;
+    }
+
+    .highlight {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      color: #5e3a8a;
+      font-weight: 500;
+      margin: 1.4em 0 0.8em;
+    }
+
+    .signature {
+      margin-top: 3rem;
+      font-size: 1.1rem;
+      color: #6b5a7f;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.8rem; }
+      .message { padding: 40px 25px; }
+      .gallery img { height: 320px; }
+    }
